@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+         integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+   
+      <title>Suganya Portfolio</title>
+   </head>
+   <body>
+      <!--Nav Bar-->
+      <header>
+         <img class="logo" src="./Images/logo.svg" alt="">
+         <input type="checkbox" id="nav-toggle" class="nav-toggle">
+         <nav>
+            <ul>
+               <li><a href="#aPage">About</a></li>
+               <li><a href="#portfolioP">Portfolio</a></li>
+               <li><a href="#toolBoxP">ToolBox</a></li>
+               <li><a href="#contactPage">Contact Me</a></li>
+            </ul>
+         </nav>
+         <label for="nav-toggle" class="nav-toggle-label">
+         <span></span>
+         </label>
+      </header>
+      <div class="wrapper wrapper--hero">
+         <div class="hero">
+            <div class="main" >
+               <! -- Whats the point of having this div since it does not contain the content within the div?-->
+               <h1 class="main__txt main--hello">Hello!  </h1>
+               <h1 class="main__txt main--iam">I am, </h1>
+               <h1 class="main__txt main--suganya">Suganya </h1>
+            </div>
+            <img class="hero__img" src="/Images/heroImg.svg" alt="Girl Programmer">
+            <h3 class="hero__text"> I'm a <span>front-end developer</span>, <br>
+               based out of Toronto.
+            </h3>
+            <button class="btn btn--mobile hero__btn" type="button">Hire Me!</button>
+         </div>
+         <div class="scrollbar">
+            <a class="scrollbar__link" href="#aPage">
+            <i class="fas fa-angle-double-down"></i>
+            </a>
+         </div>  
+      </div>
+
+
+      <!-- About Page--->
+      <div class="wrapper wrapper--about" id="aPage">
+         <h2 class="about__title">About Me</h2>
+         <div class="content content--left">		
+            <div class="carousel">
+               <button class="carousel__button carousel__button--left is-hidden">
+                  <i class="fas fa-angle-left"></i>
+               </button>
+               <div class="carousel__track-container">
+                  <ul class="carousel__track">
+                     <li class="carousel__slide current-slide">
+                        <img class="carousel__image" src="/Images/caraouselImg3.jpeg" alt="Place holder Image">
+                     </li>
+                     <li class="carousel__slide">
+                        <img class="carousel__image" src="/Images/caraouselImg1.jpeg" alt="Place holder Image">
+                     </li>
+                     <li class="carousel__slide">
+                        <img class="carousel__image" src="/Images/caraouselImg2.jpeg" alt="Place Holder Image ">
+                     </li>
+                  </ul>
+               </div>
+               <button class="carousel__button carousel__button--right">
+                  <i class="fas fa-angle-right"></i>
+               </button>
+               <div class="carousel__nav">
+                  <button class="carousel__indicator current-slide"></button>
+                  <button class="carousel__indicator"></button>
+                  <button class="carousel__indicator"></button>
+               </div>
+              
+            </div>
+         </div>
+         <div class="content content--right">
+            <div class="aboutMe__div">
+            <p class="aboutMe__p">
+               Hi! I'm a Front-End developer. When I am not coding, you can find me playing with Riley(she is a pup), my makeup, or Netflix-ing <br><br>
+
+               Before I got into programming, I was in medical sales for hear.com. I used to work with seniors and clinics all across Canada.  These days, I'm all about providing users with cohesive, meaningful, accessible, and intuitive experiences on the web. <br><br>
+               
+               I bring precision and conciseness — dry, easy-to-read code — as well as a passion for the bigger picture. I know what makes a good story, whether you're telling it through a website or a novel. <br><br>
+               
+               Talk to me about 💻 web development, 🎲 make-up, 📚 far off places, or 🐈 your dog.   
+            </p>
+            <button class="btn">View Resume</button>
+         </div>
+         </div>
+      </div>
+
+
+
+
+
+      <!-- Portfolio Page--->
+      <section class="wrapper wrapper--portfolio" id="portfolioP">
+         <h2 class="portfolio__title">Portfolio</h2>
+         <div class="grid grid--portfolio">
+            <div class="grid__item">
+               <div class="card">
+                  <img class="card__img" src="https://imaleks.dev/assets/robotrivia.png" alt="">
+                  <div class="card__content">
+                     <h3 class="card__title">Title</h3>
+                     <p class="card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, error sit. Numquam aperiam pariatur laudantium ipsum dicta architecto ab omnis, assumenda voluptatem non impedit neque praesentium temporibus voluptatum harum quasi?</p>
+                     <button class="btn btn--github"> Github </button>
+                     <button class="btn btn--live">Live</button>
+                  </div>
+               </div>
+            </div>
+            <div class="grid__item">
+               <div class="card">
+                  <img class="card__img" src="https://imaleks.dev/assets/robotrivia.png" alt="">
+                  <div class="card__content">
+                     <h3 class="card__title">Title</h3>
+                     <p class="card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, error sit. Numquam aperiam pariatur laudantium ipsum dicta architecto ab omnis, assumenda voluptatem non impedit neque praesentium temporibus voluptatum harum quasi?</p>
+                     <button class="btn btn--github"> Github </button>
+                     <button class="btn btn--live">Live</button>
+                  </div>
+               </div>
+            </div>
+            <div class="grid__item">
+               <div class="card">
+                  <img class="card__img" src="https://imaleks.dev/assets/robotrivia.png" alt="">
+                  <div class="card__content">
+                     <h3 class="card__title">Title</h3>
+                     <p class="card__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, error sit. Numquam aperiam pariatur laudantium ipsum dicta architecto ab omnis, assumenda voluptatem non impedit neque praesentium temporibus voluptatum harum quasi?</p>
+                     <button class="btn btn--github"> Github </button>
+                     <button class="btn btn--live">Live</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+
+
+      <!---ToolBox-->
+      <!--Drew inspiration from https://imaleks.dev/#toolkit-->
+      <div class="wrapper--ToolBox" id="toolBoxP" >
+         <h2>Toolkit</h2>
+         <div class="toolBoxContainer">
+            <div class="cardT ">
+               <div class=" cardT--front">
+                  <img class="cardT__img" src="/Images/cplus.svg" alt="c++">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 75%" ></div>
+                     <p class="cardT__name">C++</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class=" cardT--front">
+                  <img class="cardT__img" src="/Images/c.svg" alt="c">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 75%" ></div>
+                     <p class="cardT__name">C</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/html.svg" alt="html">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 100%" ></div>
+                     <p class="cardT__name">HTML</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/css.svg" alt="css">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 60%" ></div>
+                     <p class="cardT__name">CSS</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/firebase.svg" alt="firebase">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 50%" ></div>
+                     <p class="cardT__name">Firebase</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/github.svg" alt="github">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 50%" ></div>
+                     <p class="cardT__name">Github</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/js.svg" alt="JS">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 80%" ></div>
+                     <p class="cardT__name">JavaScript</p>
+                  </div>
+               </div>
+            </div>
+           
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/mysql.svg" alt="MySQL">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 60%" ></div>
+                     <p class="cardT__name">MySQL</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/nodejs.svg" alt="Node">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 75%" ></div>
+                     <p class="cardT__name">NoseJS</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/python.svg" alt="Python">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 40%" ></div>
+                     <p class="cardT__name">Python</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/react.svg" alt="React">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 80%" ></div>
+                     <p class="cardT__name">React</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/responsive.svg" alt="responsive">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 60%" ></div>
+                     <p class="cardT__name">Responsive Design</p>
+                  </div>
+               </div>
+            </div>
+            <div class="cardT">
+               <div class="cardT--front">
+                  <img class="cardT__img" src="/Images/sass.svg" alt="sass">
+               </div>
+               <div class="cardT--back">
+                  <div class="cardT__progressBar">
+                     <div class="cardT__myBar" style="width: 90%" ></div>
+                     <p class="cardT__name">SASS</p>
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+      <!-- Contact Page--->
+      <div class="wrapper--contact" id="contactPage">
+            <div class="contact--right">
+               <h2 class="title">Drop me a line!</h2>
+               <form class="form" action="">
+                  <div class="form__input">
+                     <input class="form__name--input" type="text" id="name" name="name" required>
+                     <label class="form__name" for="name"> Name</label>
+                  </div>
+                  <div class="form__input">
+                     <input  class="form__phone--input" type="text" required id="phone" name="phone">
+                     <label class="form__phone" for="phone"> Phone</label>
+                  </div>
+                  <div class="form__input">
+                     <input class="form__email--input" type="text" required id="email" name="email" required>
+                     <label class="form__email" for="email">Email</label>
+                  </div>
+                  <div class="form__input">
+                     <textarea class="form__message--input" id="message" name="message" required></textarea>
+                     <label class="form__message" for="message">Message</label>
+                  </div>
+                  <input class="btn btn--submit"type="submit" value="Submit">
+                  
+               </form>
+            </div>
+            <div class="contact--left">
+             <img src="" alt="">
+            </div>
+      </div>
+      <script src="/js/carousel.js"></script>
+   </body>
+</html>
